@@ -1,0 +1,84 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+    grid-template-rows: 100px 20px 150px 20px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+}
+
+.Line1{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    border: 2px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 85%;
+    margin: auto;
+}
+
+.Line2{
+    grid-column: 1/6;
+    grid-row: 4/5;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 85%;
+    margin: auto;
+}
+
+table{
+    grid-column: 1/6;
+    grid-row: 5/6;
+    border-collapse: collapse;
+}
+
+table td{
+    border: 1px solid black;
+    padding: 9px;
+}
+
+#Pick{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    border: 1px solid black;
+    padding: 50px;
+    border-style: dotted;
+    height: 130px;
+    width: 340px;
+    margin: auto;
+    background-color: rgb(243, 242, 242);
+}
+
+#Export{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    height: 30px;
+    width: 110px;
+    font-size: medium;
+    margin: auto;
+}
+
+#Edit{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 30px;
+    width: 110px;
+    font-size: medium;
+    margin: auto;
+}
+
+h1{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    text-align: center;
+    margin: auto;
+}
